@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="button.css">
+    <script defer src="./face-api.min.js"></script>
+    <script defer src="jquery-3.6.0.min.js"></script>
+
+    <script defer src="./tf.min (1).js"></script>
+    <script type="module" defer src="popup.js"></script>
+  
+    <style>
+      /* My Skills */
+/* code jdid yabda lena */
+
+.background {
+  background-color: black;
+  padding: 20px;
+}
+#element {display: none;}
+.container {
+
+  width: 250px;
+  background-color: rgba(2, 59, 80, 0.6);
+  padding: 20px;
+  border-radius: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+}
+.progress {
+  height: 15px;
+  border-radius: 20px;
+  background-color: black;
+  width: 60%;
+}
+
+.emotionItem {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  line-height: 17px;
+  padding: 5px;
+  width:50px;
+}
+.progress-bar {
+  text-align: left;
+  background-color: #96be25;
+  border-radius: 20px;
+  height: 15px;
+  transition-duration: 0.5s;
+}
+h2 {
+  color: #96be25;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 5px;
+}
+/* code jdid youfa lena */
+      body {
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button {
+  background-color: #6a82fb; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: #6a82fb;
+  border-radius: 10px; 
+  border: 2px solid #6a82fb;
+}
+
+.button1:hover {
+  background-color: #6a82fb;
+  color: white;
+}
+      video{
+        display: none;
+      }
+  
+      canvas {
+        position: absolute;
+      }
+      .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #outputImage{
+        display: block;
+      }
+      #can{
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body class="block">
+    <button id="capture" class="button button1"> take a snap</button>
+    <video  style="visibility: hidden;" width="400px" height="0" id="video" autoplay muted></video>
+    <div style="display:flex;justify-content: space-around;align-items: center; width:100%;">
+     <img id="outputImage" width="250px"/>
+     <div id="element">
+       marhbe
+     </div>
+    </div>  
+      
+
+    
+    
+  </body>
+</html>
+
+
