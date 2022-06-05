@@ -1,0 +1,192 @@
+
+\section{References}
+Here's a reference to an article \cite{universalFER}.
+
+Here's a reference to a Website \cite{insat}.
+
+\section{Lists}
+\subsection{Bullet lists}
+Here's an example of a bullet list:
+\begin{itemize}
+\item Idea 1.
+\item Idea 2.
+\end{itemize}
+\medskip \par
+
+\subsection{Enumerated lists}
+Here's an example of an enumerated list:
+\begin{enumerate}
+\item Idea 1 ;
+\item Idea 2.
+\end{enumerate}
+\medskip \par
+
+\section{Figures}
+Figure \ref{fig:exemple1} is an example of a figure.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.3\textwidth]{images/INSAT.jpg}
+\caption{This is an example of a figure.}
+\label{fig:exemple1}
+\end{figure}
+
+Figure \ref{fig:exemple2} is an example of insertion of many images (\ref{fig:exemple21} and \ref{fig:exemple22}) in one figure.
+\begin{figure}[!h]
+\begin{center}
+\subfloat[]{\includegraphics[width=0.2\textwidth]{images/INSAT.jpg}\label{fig:exemple21}}\quad 
+\subfloat[]{\includegraphics[width=0.3\textwidth]{images/INSAT.jpg}\label{fig:exemple22}}
+\caption{This is an example of a multi-figure: (a) small sub-figure and (b) large sub-figure.}
+\label{fig:exemple2}
+\end{center}
+\end{figure}
+
+\section{Tables}
+Table \ref{tab:exemple1} is an example of a table with fixed columns.
+
+\begin{table}[!h]
+\caption{This is an example of a table} 
+\label{tab:exemple1}
+\centering
+\renewcommand{\arraystretch}{1.65}
+\begin{tabular}{| C{.11\textwidth} || C{.35\textwidth} | p{.45\textwidth} |} 
+\hline
+\textbf{a} & \textbf{b} & \textbf{c} \\ 
+\hline 
+\hline 
+1 & \nohyphens{No hyphens avoids cutting the words.} & \nohyphens{...} \\ 
+\hline 
+2 & \nohyphens{...} & \nohyphens{...} \\ 
+\hline 
+\end{tabular}
+\end{table}
+
+Table \ref{tab:exemple2} is an example of a table where columns' widths adapt to the content.
+
+\begin{table}[!h]
+\caption{This is an example of a table with multilines et multicolumns} 
+\label{tab:exemple2}
+\centering
+\renewcommand{\arraystretch}{1.65}
+\begin{tabular}{|l||c|c|c|}
+\cline{2-4}
+\multicolumn{1}{c|}{\nohyphens{}} & a & b & c\\
+\hline
+\hline
+1 & \nohyphens{...} & \nohyphens{...} & \nohyphens{...}\\ 
+\hline 
+2 & \multicolumn{2}{c|}{\nohyphens{...}} & \nohyphens{...}\\ 
+\hline 
+\multirow{2}*{3} & ... & ... & ... \\
+\cline{2-4}
+& \nohyphens{...} & \nohyphens{...} & \nohyphens{...}\\ 
+\hline 
+\end{tabular}
+\end{table}
+
+\section{Algorithms}
+Algorithm \ref{algo:exemple} is an example. 
+\begin{algorithm}[!h]
+\setstretch{1.15}
+ \caption{Process}
+ \label{algo:exemple}
+ \SetKwInOut{Input}{Input}
+ \SetKwInOut{Output}{Output}
+ \Input{$X= \{x_{i} \in\mathbb{R}^{d}\}_{i=1}^{n}$ : data matrix dimensioned $d \times n $\\
+$Y = \{y_{i} \in\{1, ..., c\}\}_{i=1}^{n}$ : vector of $n$ labels\\}
+\Output{$T$ : processed matrix}
+
+... $\gets$ ...\;
+\For{$i\gets 1$ \KwTo $n$ }{
+\eIf{\textsf{...}}
+ {
+ ...\;
+ }
+ {
+ \eIf{\textsf{\upshape ...}}
+ {
+ ...\;
+ }
+ {
+ ...\;
+ }
+ ...
+ }				 
+ }
+ $T \gets$ ...
+\end{algorithm}
+
+\section*{Conclusion}
+
+\chapter*{Conclusion and perspectives}
+\addcontentsline{toc}{chapter}{Conclusion and perspectives}
+\markboth{Conclusion and perspectives}{}
+
+\begin{appendix}
+\chapter{Appendix 1}
+Insert your appendixes here if you need.
+\end{appendix}
+
+%\spacing{1}
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}
+\subsubsection{Micro expressions}
+Since facial expressions appear spontaneously and unconsciously; they can reveal hidden feelings and thoughts.
+They appear quickly before a person is fully aware which makes it challenging to control and hide an emotional reaction. Micro-expressions are the rapid display of a concealed emotion; occurring within the duration of 1/5 and 1/25 seconds, compared to ½ to 4 seconds for a macro-expression.
+Recognizing them provides an insight into true thoughts and emotions.
+
+\subsubsection{DenseNet}
+A DenseNet is a sort of convolutional neural network that utilizes dense 
+connections among layers, via Dense Blocks, wherein we connect all layers (with 
+matching feature-map sizes) with each other. To maintain the feed-forward 
+nature, each layer obtains extra inputs from all previous layers and passes on its 
+personal feature maps to all subsequent layers.
+\autoref{fig:densenet}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/A-visualization-of-the-DenseNet-201-architecture-Each-layer-takes-all-preceding.png}
+    \caption{A visualization of the DenseNet-201 architecture}
+    \label{fig:densenet}
+    \cite{denseNet}
+\end{figure}
+DenseNet-201 trained on ImageNet dataset,this model achieves 77.42%top-1 and 
+93.66\% top-5 accuracy.
+
+
+\\
+Micro-expression analysis is a key to detecting lies and deceit. In fact, when the content of a speech contradicts the emotion expressed on the face, it means that the speaker is concealing what he truly thinks about a matter. 
+
+Trained on ImageNet Large Scale Visual Recognition Challenge 2012 classification dataset, consisting of 1.2 million training images, with 1,000 classes of objects; this model achieves 75.2\% top-1 and 92.5\% top-5 accuracy.
+
+Trained on ImageNet Large Scale Visual Recognition Challenge 2012 classification dataset, consisting of 1.2 million training images, with 1,000 classes of objects; this model achieves 87\% top-1 and 96.3\% top-5 accuracy.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/State of art/morphcast.PNG}
+    \caption{Morphcast editing phase}
+    \label{fig:morphcast}
+    \cite{morphcast}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/State of art/morphcast_test.png}
+    \caption{Morphcast emotional tracking}
+    \label{fig:morphcast_test}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/google colab logo.png}
+    \caption{Google Colab's logo}
+    \label{googleColab}
+\end{figure}
+Now we will compare the results to choose the the best model and optimize its hyper-parameters.
+
+\chapter*{\textbf{List of Acronyms}}
+%\addcontentsline{toc}{chapter}{List of Acronyms}
+\markboth{List of acronyms}{}
+\begin{itemize}
+\item \textbf{FER} Facial Expression Recognition
+\item \textbf{CNN} Convolutional Neural Network
+\item \textbf{FC} Fully Connected
+\end{itemize}
