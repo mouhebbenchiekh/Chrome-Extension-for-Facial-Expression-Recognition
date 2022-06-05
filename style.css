@@ -1,0 +1,124 @@
+.background {
+  background-color: black;
+  padding: 20px;
+}
+
+.container {
+
+  width: 200px;
+  background-color: rgba(2, 59, 80, 0.6);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 7px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.progress {
+  height: 15px;
+  border-radius: 20px;
+  background-color: white;
+  width: 60%;
+}
+
+.emotionItem {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  line-height: 17px;
+  padding: 5px;
+  width: 50px;
+}
+
+.progress-bar {
+  text-align: left;
+  background-color: #000b44;
+  border-radius: 20px;
+  height: 15px;
+  transition-duration: 0.5s;
+}
+
+h2 {
+  color: #000b44;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.button {
+  background-color: #000b44;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #000b44;
+  color: white;
+  border-radius: 10px;
+  background-color: #000b44;
+  border: 2px solid;
+}
+
+.button1:hover {
+  background-color: #000b44;
+  color: white;
+  transform: scale(1.25);
+
+}
+
+video {
+  display: none;
+}
+
+canvas {
+  position: absolute;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.outputImage {
+  display: block;
+  border-radius: 20px;
+  margin: 7px;
+  width: 200px
+}
+
+.face_analysis_element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}

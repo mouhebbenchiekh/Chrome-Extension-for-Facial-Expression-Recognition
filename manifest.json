@@ -1,6 +1,6 @@
 {
-  "name": "Example 1",
-  "description": "Build an Extension!",
+  "name": "Facial expression recognition",
+  "description": "Face identification from web page, analysis of expression and emotion detection.",
   "version": "1.0",
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' 'unsafe-eval' ; object-src 'self'",
@@ -8,7 +8,7 @@
   "permissions": ["storage", "activeTab", "desktopCapture", "tabCapture"],
 
   "browser_action": {
-    "default_title": "Test Extension",
+    "default_title": "Facial expression recognition",
     "default_popup": "popup.html"
   }
 }
