@@ -9,6 +9,6 @@
 
   "browser_action": {
     "default_title": "Facial expression recognition",
-    "default_popup": "popup.html"
+    "default_popup": "extensionFront/popup.html"
   }
 }
